@@ -1,5 +1,5 @@
 build:
-	@for i in *.v ; do iverilog $$i -o $${i%.*}.bin ; done
+	@iverilog -o and.bin ex.v tb.ex.v
 
 clean:
 	@rm -rf *.bin
